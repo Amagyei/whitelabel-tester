@@ -22,7 +22,7 @@ app_logo_url = '/assets/whitelabel/images/whitelabel_logo.jpg'
 # app_include_js = "/assets/whitelabel/js/whitelabel.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
+# web_include_css = "/assets/whitelabel/css/whitelabel_web.css"
 # web_include_js = "/assets/whitelabel/js/whitelabel.js"
 
 # include js in page
@@ -52,7 +52,7 @@ website_context = {
 	"favicon": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg",
 	"splash_image": app_logo or "/assets/whitelabel/images/whitelabel_logo.jpg"
 }
-after_migrate = ['whitelabel.api.whitelabel_patch']
+# after_migrate = ['whitelabel.api.whitelabel_patch']
 
 # Generators
 # ----------
@@ -117,7 +117,7 @@ after_migrate = ['whitelabel.api.whitelabel_patch']
 # 	]
 # }
 
-boot_session = "whitelabel.api.boot_session"
+# boot_session = "whitelabel.api.boot_session"
 # Testing
 # -------
 
@@ -137,7 +137,7 @@ boot_session = "whitelabel.api.boot_session"
 # 	"Task": "whitelabel.task.get_dashboard_data"
 # }
 
-override_whitelisted_methods = {
-	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
-}
+# override_whitelisted_methods = {
+# 	"frappe.utils.change_log.show_update_popup": "whitelabel.api.ignore_update_popup"
+# }
 
